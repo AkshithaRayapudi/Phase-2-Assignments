@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS-19</title>
+     <style>
+          .item1 {grid-area: item1;}
+          .item2 {grid-area: item2;}
+          .item3 {grid-area: item3;}
+          .item4 {grid-area: item4;}
+          .item5 {grid-area: item5;}
+          .grid {
+               display: grid;
+               grid-template-areas: 'item1 item1 item1 item1' 'item2 item3 item3 item4' 'item2 item5 item5 item5';
+               gap: 10px;
+               background-color: palevioletred;
+               padding: 10px;
+          }
+          .grid > div{
+               background-color: darkcyan;
+               padding: 10px 0px;
+               text-align: center;
+               font-size: 100px;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="grid">
+          <div class="item1">PIKACHU</div>
+          <div class="item2">TOGEPI</div>
+          <div class="item3">SQUITLE</div>
+          <div class="item4">BULBASAUR</div>
+          <div class="item5">PIPLUP</div>
+     </div>
+</body>
+
+</html>
